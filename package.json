@@ -1,0 +1,13 @@
+{
+  "name": "clive",
+  "version": "0.0.1",
+  "dependencies": {
+  	"restify": "*",
+  	"xml2js":"*",
+    "mongojs":"*",
+    "mongoose":"*",
+    "ws":"~0.6.3",
+    "websocket":"*",
+    "winston":"*"
+  }
+}

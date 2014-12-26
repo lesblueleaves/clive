@@ -1,0 +1,582 @@
+{
+    "Maps": {
+        "Campus": [
+            {
+                "$": {
+                    "objectVersion": "6",
+                    "name": "Moscone"
+                },
+                "Dimension": [
+                    {
+                        "$": {
+                            "length": "1000.0",
+                            "width": "1000.0",
+                            "height": "10.0",
+                            "offsetX": "0.0",
+                            "offsetY": "0.0",
+                            "unit": "FEET"
+                        }
+                    }
+                ],
+                "Building": [
+                    {
+                        "$": {
+                            "objectVersion": "5",
+                            "name": "MosconeWest"
+                        },
+                        "Dimension": [
+                            {
+                                "$": {
+                                    "length": "200.0",
+                                    "width": "200.0",
+                                    "height": "10.0",
+                                    "offsetX": "300.0",
+                                    "offsetY": "300.0",
+                                    "unit": "FEET"
+                                }
+                            }
+                        ],
+                        "Floor": [
+                            {
+                                "$": {
+                                    "objectVersion": "4",
+                                    "name": "DevNetLive",
+                                    "isOutdoor": "false",
+                                    "floorNumber": "1"
+                                },
+                                "Dimension": [
+                                    {
+                                        "$": {
+                                            "length": "103.3",
+                                            "width": "185.3",
+                                            "height": "20.0",
+                                            "offsetX": "0.0",
+                                            "offsetY": "0.0",
+                                            "unit": "FEET"
+                                        }
+                                    }
+                                ],
+                                "Image": [
+                                    {
+                                        "$": {
+                                            "imageName": "domain_0_1413901498194.png"
+                                        }
+                                    }
+                                ],
+                                "AccessPoint": [
+                                    {
+                                        "$": {
+                                            "name": "T1-10",
+                                            "radioMacAddress": "00:2b:01:00:0b:00",
+                                            "ethMacAddress": "00:2b:01:00:0b:f0",
+                                            "ipAddress": "10.10.20.250",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "170.87",
+                                                    "y": "80.99",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-1",
+                                            "radioMacAddress": "00:2b:01:00:02:00",
+                                            "ethMacAddress": "00:2b:01:00:02:f0",
+                                            "ipAddress": "10.10.20.241",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "26.23",
+                                                    "y": "25.78",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "4",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-8",
+                                            "radioMacAddress": "00:2b:01:00:09:00",
+                                            "ethMacAddress": "00:2b:01:00:09:f0",
+                                            "ipAddress": "10.10.20.248",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "75.93",
+                                                    "y": "79.83",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-3",
+                                            "radioMacAddress": "00:2b:01:00:04:00",
+                                            "ethMacAddress": "00:2b:01:00:04:f0",
+                                            "ipAddress": "10.10.20.243",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "126.59",
+                                                    "y": "25.58",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "4",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-5",
+                                            "radioMacAddress": "00:2b:01:00:06:00",
+                                            "ethMacAddress": "00:2b:01:00:06:f0",
+                                            "ipAddress": "10.10.20.245",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "46.03",
+                                                    "y": "48.28",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "4",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-7",
+                                            "radioMacAddress": "00:2b:01:00:08:00",
+                                            "ethMacAddress": "00:2b:01:00:08:f0",
+                                            "ipAddress": "10.10.20.247",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "25.3",
+                                                    "y": "77.14",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-9",
+                                            "radioMacAddress": "00:2b:01:00:0a:00",
+                                            "ethMacAddress": "00:2b:01:00:0a:f0",
+                                            "ipAddress": "10.10.20.249",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "126.77",
+                                                    "y": "80.02",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "36",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-2",
+                                            "radioMacAddress": "00:2b:01:00:03:00",
+                                            "ethMacAddress": "00:2b:01:00:03:f0",
+                                            "ipAddress": "10.10.20.242",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "71.98",
+                                                    "y": "24.62",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-4",
+                                            "radioMacAddress": "00:2b:01:00:05:00",
+                                            "ethMacAddress": "00:2b:01:00:05:f0",
+                                            "ipAddress": "10.10.20.244",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "171.33",
+                                                    "y": "25.58",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "4",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "$": {
+                                            "name": "T1-6",
+                                            "radioMacAddress": "00:2b:01:00:07:00",
+                                            "ethMacAddress": "00:2b:01:00:07:f0",
+                                            "ipAddress": "10.10.20.246",
+                                            "numOfSlots": "2",
+                                            "apMode": "LOCAL"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "147.72",
+                                                    "y": "46.36",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ],
+                                        "ApInterface": [
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_B",
+                                                    "slotNumber": "0",
+                                                    "channelAssignment": "11",
+                                                    "channelNumber": "11",
+                                                    "txPowerLevel": "4",
+                                                    "antennaPattern": "Internal-1140-2.4GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "0"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "band": "IEEE_802_11_A",
+                                                    "slotNumber": "1",
+                                                    "channelAssignment": "1",
+                                                    "channelNumber": "64",
+                                                    "txPowerLevel": "5",
+                                                    "antennaPattern": "Internal-1140-5.0GHz",
+                                                    "antennaAngle": "1.57",
+                                                    "antennaElevAngle": "0.0",
+                                                    "antennaGain": "11"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "LocationFilterRegion": [
+                                    {
+                                        "$": {
+                                            "regionType": "OUTSIDE"
+                                        },
+                                        "MapCoordinate": [
+                                            {
+                                                "$": {
+                                                    "x": "0.0",
+                                                    "y": "0.0",
+                                                    "unit": "FEET"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "x": "185.3",
+                                                    "y": "0.0",
+                                                    "unit": "FEET"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "x": "185.3",
+                                                    "y": "103.3",
+                                                    "unit": "FEET"
+                                                }
+                                            },
+                                            {
+                                                "$": {
+                                                    "x": "0.0",
+                                                    "y": "103.3",
+                                                    "unit": "FEET"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
