@@ -1,19 +1,36 @@
-var xml2js = require('xml2js');
-var https = require('https');
-var mongoose = require('mongoose');
-require('../model/ClientLocation.js');
-var cmxClient = mongoose.model('CmxClient');
-var util = require('../utils/util.js');
-var logger = require("../logger");
+var xml2js = require('xml2js')
+	,https = require('https')
+	,mongojs = require('mongojs')
+	,moment = require('moment');
 
+var util = require('../utils/util.js')
+	,logger = require("../logger")
+	,cfg = require('../config');
+
+var locationdb = mongojs('mongodb://localhost:27017/cmxapp', ['cmxclient']);
+
+var locationService = {};
+locationService.location2Json =location2Json;
+locationService.getLocationByDate =getLocationByDate;
+
+locationService.capureLocs = capureLocs;
 
 function location2Json (clientIp, callback) {
+	// var options = {
+	// 	host: '64.103.26.61',
+	// 	port: 443,
+	// 	path: '/api/contextaware/v1/location/clients/'+clientIp,
+	// 	method: 'GET',
+	// 	auth:'learning:learning',
+	// 	rejectUnauthorized: false
+	// };
+
 	var options = {
-		host: '64.103.26.61',
-		port: 443,
-		path: '/api/contextaware/v1/location/clients/'+clientIp,
+		host: cfg.cmx.host,
+		port: cfg.cmx.port,
+		path: cfg.cmx.path + clientIp,
 		method: 'GET',
-		auth:'learning:learning',
+		auth: cfg.cmx.acct,
 		rejectUnauthorized: false
 	};
 
@@ -48,9 +65,43 @@ function location2Json (clientIp, callback) {
 
 }
 
-exports.location2Json = location2Json
+function getLocationByDate(ts,callback){
+	var m = moment(Number(ts));
+	var ms = moment(m);
+	ms.subtract(2,"seconds");
+	// logger.info(day);
+	console.log(m.toDate());
+	console.log(ms.toDate());
 
-// location2Json('10.10.20.238',function(data){
-// 	console.log(JSON.stringify(data));
-// });
+	locationdb.cmxclient.find(
+		{
+			statistics:{
+				$elemMatch: {
+					$and:[
+						{lastLocatedTime:{$lte:m.toDate()}},
+						{lastLocatedTime:{$gte:ms.toDate()}}
+					]
+				}
+			}
+		}, function(err, data){
+			var rtnlocs=[];
+			data.forEach(function(d){
+				var loc={};
+				rtnlocs.push(loc);
+				loc.x= d.mapCoordinate[0].x;
+				loc.y= d.mapCoordinate[0].y;
+				loc.boothId = d.boothId;
+				loc.boothName = d.boothName;
+				loc.macAddress = d.macAddress;
+			});
+			callback(rtnlocs);
+		});
+}
+
+ function capureLocs(){
+ 	// console.log("sstt");
+ }
+
+ module.exports = locationService;
+
 

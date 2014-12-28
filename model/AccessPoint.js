@@ -8,6 +8,8 @@ var mongoose = require('mongoose'),
 
 var AccessPointSchema = new Schema({
     name: String,
+    bootId:String,
+    boothName:String,
     radioMacAddress: String,
     ethMacAddress:String,
     ipAddress:String,

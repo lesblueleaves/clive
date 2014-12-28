@@ -8,6 +8,8 @@
     "mongoose":"*",
     "ws":"~0.6.3",
     "websocket":"*",
-    "winston":"*"
+    "winston":"*",
+    "node-uuid":"*",
+    "moment":"*"
   }
 }

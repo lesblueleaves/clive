@@ -2,18 +2,11 @@ var WebSocketServer = require('websocket').server;
 var http = require('http');
 var restify = require('restify');
 var mongojs = require('mongojs');
-var mongoose = require('mongoose');
-var map = require('./model/Map.js');
-var Map = mongoose.model('CmxMap');
-var locService = require('./service/locationService.js');
+var locService = require('./service/locationService');
+var boothService = require('./service/boothService');
 
 var logger = require("./logger");
 
-// var server = http.createServer(function(request, response){
-// 	console.log(new Date() + ' Received request for ' + request.url);
-// 	response.writeHead(404);
-// 	response.end();
-// });
 
 var mapdb = mongojs('mongodb://localhost:27017/cmxapp', ['cmxmap']);
 var locationdb = mongojs('mongodb://localhost:27017/cmxapp', ['cmxclient']);
@@ -27,6 +20,10 @@ server.use(restify.bodyParser());
 server.listen(9696, function(){
 	 console.log((new Date()) + ' Server is listening on port 9696');
 });
+
+setInterval(function(){
+  locService.capureLocs();
+},1000);
 
 server.get('/location/getme', function(req, res, next){
   var myIp = req.connection.remoteAddress;
@@ -65,6 +62,15 @@ server.get('/location/getme', function(req, res, next){
   next();
 });
 
+server.get('clients/:ts', function(req, res, next){
+  var ts = req.params.ts;
+  locService.getLocationByDate(ts,function(data){
+    res.send(data);
+  });
+  next();
+});
+
+
 server.get('/maps', function(req, res, next){
   mapdb.cmxmap.find(function(err, data){
     // console.log(data);
@@ -95,6 +101,17 @@ server.get('/maps/:campus/:building', function(req, res, next){
     return next();
   }); 
 });
+
+server.post('/booth/add', function(req, res, next){
+  var boothParam = JSON.parse(req.body);
+  console.log("reqbody:", boothParam);
+
+  boothService.saveBooth(boothParam,function(data){
+    res.send(data);
+  });
+  return next();
+});
+
 
 server.get(/.*/, restify.serveStatic({
     'directory': 'public',

@@ -58,9 +58,13 @@ function parseALocation (clocation) {
 		var stModel = {};
 		cl.statistics.push(stModel);
 		var st = clocation.Statistics[q];
-		stModel.currentServerTime = st.$.currentServerTime;
-		stModel.firstLocatedTime = st.$.firstLocatedTime;
-		stModel.lastLocatedTime = st.$.lastLocatedTime;
+		stModel.currentServerStr =st.$.currentServerTime;
+		stModel.firstLocatedStr = st.$.firstLocatedTime;
+		stModel.lastLocatedStr = st.$.lastLocatedTime;
+
+		stModel.currentServerTime = new Date(st.$.currentServerTime);
+		stModel.firstLocatedTime = new Date(st.$.firstLocatedTime);
+		stModel.lastLocatedTime = new Date(st.$.lastLocatedTime);
 	}
 	return cl;
 }

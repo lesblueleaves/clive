@@ -5,10 +5,6 @@ var fs = require('fs'),
 var https = require('https');
 var util = require('./utils/util.js');
 
-var mongoose = require('mongoose');
-require('./model/ClientLocation.js');
-var cmxClient = mongoose.model('CmxClient');
-
 var options = {
 	host: '64.103.26.61',
 	port: 443,
@@ -16,8 +12,6 @@ var options = {
 	method: 'GET',
 	auth:'learning:learning',
 	rejectUnauthorized: false
-	// requestCert: true
-	// agent: false
 };
 
 var db = mongojs('mongodb://localhost:27017/cmxapp', ['cmxclient']);
